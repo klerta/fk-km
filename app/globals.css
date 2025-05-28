@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-background {
+    background-image: url('../public/assets/Hero.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .hero-background {
+        background-attachment: scroll;
+        width: auto;
+        height: 644px;
+    }
+
+    .desktop-video {
+        display: none;
+    }
+}
+
+.paragraph {
+    font-weight: light;
+    ;
+}
+
+@media (min-width: 768px) {
+    .phone-video {
+        display: none;
+    }
+}
+
+.bg-blend-soft-light {
+    mix-blend-mode: soft-light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
